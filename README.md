@@ -23,7 +23,11 @@ Este laboratório visa entender as bases do ransomware através da encriptação
 Criar uma pasta com 3 arquivos: um arquivo de texto .TXT e dois arquivos .PY
 No laboratório foram criados os arquivos: teste.txt, encrypter.py e decrypter.py
 
+![ransomware-python-cybersec/ransomware-python-imgs/ransomware-python-img1.png at main · TatianePimentaLeal/ransomware-python-cybersec · GitHub](https://github.com/TatianePimentaLeal/ransomware-python-cybersec/blob/main/ransomware-python-imgs/ransomware-python-img1.png)
+
 *Ref 1: Criação de pasta e arquivos*
+
+\***
 
 No arquivo .TXT inserir um texto simples para fins de exemplo visual. Já nos arquivos .py foram incluídos os seguintes códigos:
 
@@ -87,6 +91,8 @@ Caso apareça o erro:
 
 > **Traceback (most recent call last): File "/home/kali/projeto-ransomware/encrypter.py", line 2, in import pyaes ModuleNotFoundError: No module named 'pyaes'**
 
+
+
 É porque, para rodar os comandos de encriptação e decriptação, é importante ter a biblioteca AES do Python. Neste caso, na pasta dos arquivos, rode o comando:
 
 ```
@@ -101,7 +107,11 @@ sudo apt-get -y install python3-pyaes
 
 Assim, o erro não aparecerá mais e os comandos Python poderão ser executados sem problemas:
 
+![ransomware-python-cybersec/ransomware-python-imgs/ransomware-python-img2.png at main · TatianePimentaLeal/ransomware-python-cybersec · GitHub](https://github.com/TatianePimentaLeal/ransomware-python-cybersec/blob/main/ransomware-python-imgs/ransomware-python-img2.png)
+
 *Ref 2: Instalação do Python3-pyaes*
+
+\***
 
 Agora, ao rodar o comando:
 
@@ -109,9 +119,13 @@ Agora, ao rodar o comando:
 python encrypter.py
 ```
 
-O arquivo teste.txt será encriptado
+O arquivo teste.txt será encriptado:
+
+![ransomware-python-cybersec/ransomware-python-imgs/ransomware-python-img3.png at main · TatianePimentaLeal/ransomware-python-cybersec · GitHub](https://github.com/TatianePimentaLeal/ransomware-python-cybersec/blob/main/ransomware-python-imgs/ransomware-python-img3.png)
 
 *Ref 3: Encriptação do arquivo teste.txt*
+
+\***
 
 E ao rodar o comando:
 
@@ -121,4 +135,8 @@ python decrypter.py
 
 O arquivo voltará a aparecer corretamente:
 
-*Ref 4 e 5: Decriptação do arquivo teste.txt.
+![ransomware-python-cybersec/ransomware-python-imgs/ransomware-python-img4.png at main · TatianePimentaLeal/ransomware-python-cybersec · GitHub](https://github.com/TatianePimentaLeal/ransomware-python-cybersec/blob/main/ransomware-python-imgs/ransomware-python-img4.png)
+
+![ransomware-python-cybersec/ransomware-python-imgs/ransomware-python-img5.png at main · TatianePimentaLeal/ransomware-python-cybersec · GitHub](https://github.com/TatianePimentaLeal/ransomware-python-cybersec/blob/main/ransomware-python-imgs/ransomware-python-img5.png)
+
+*Ref 4 e 5: Decriptação do arquivo teste.txt.*
